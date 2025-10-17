@@ -1,27 +1,180 @@
-@import url(./header.css);
-@import url(./footer.css);
-@import url(./speaker_cards.css);
+@import url(footer.css);
+@import url(header.css);
+/* Reset básico já aplicado via reset.css */
 
-
-html{
+/* FONTES E CORES GERAIS */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
-.main-content{
-    max-width: 1440vh;
-    max-height: 1024vh;
+
+/* TITULOS E TEXTOS */
+h1, h2, h3 {
+    color: orangered;
+    margin-bottom: 10px;
+}
+p {
+    line-height: 1.6;
 }
 
-.content-inicio, .content-receitas, .content-fotos, .content-criadores{
-    width: 100%; 
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    font-size: 40px; 
+span{
     color: black;
-    text-align: center;
-} 
+}
 
-.content-receitas{
+/* ===========================================================
+   SEÇÃO: INÍCIO
+   =========================================================== */
+.content-inicio {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 40px 10%;
+    text-align: center;
+    background-color: #fffaf7;
+}
 
+.showcase-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.showcase-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+.showcase-images img:hover {
+    transform: scale(1.05);
+}
+
+.content-text-image {
+    max-width: 800px;
+}
+.content-text-image img {
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================================================
+   SEÇÃO: RECEITAS
+   =========================================================== */
+.content-receitas {
+    background-color: white;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.speaker-card {
+    background-color: #fffaf7;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.speaker-card:hover {
+    transform: translate(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+.speaker-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.speaker-card figcaption {
+    padding: 15px;
+}
+.speaker-card h3 {
+    color: orangered;
+    margin-bottom: 8px;
+}
+
+/* ===========================================================
+   SEÇÃO: FOTOS
+   =========================================================== */
+.content-fotos {
+    padding: 60px 10%;
+    background-color: #fffaf7;
+}
+.image-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+.image-showcase img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+.image-showcase img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ===========================================================
+   SEÇÃO: CRIADORES
+   =========================================================== */
+.content-criadores {
+    padding: 60px 10%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.content-criadores .speaker-card {
+    width: 220px;
+    background-color: #fffaf7;
+}
+.content-criadores img {
+    border-bottom: 2px solid orangered;
+}
+
+/* ===========================================================
+   RESPONSIVIDADE GLOBAL
+   =========================================================== */
+@media (max-width: 768px) {
+    .showcase-images img {
+        width: 150px;
+    }
+
+    .content-inicio {
+        padding: 20px;
+    }
+
+    .speaker-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .image-showcase {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .content-criadores {
+        flex-direction: column;
+        align-items: center;
+    }
 }
