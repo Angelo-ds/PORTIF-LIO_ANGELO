@@ -16,6 +16,8 @@
 
 .header-menu{
     justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .header-menu ul {
