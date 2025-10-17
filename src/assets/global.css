@@ -25,6 +25,10 @@ p {
 span{
     color: black;
 }
+section{
+    width: 100vw;
+    height: 100vh;
+}
 
 /* ===========================================================
    SEÇÃO: INÍCIO
@@ -32,6 +36,7 @@ span{
 .content-inicio {
     width: 100%;
     min-height: 100vh;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,7 +79,7 @@ span{
    =========================================================== */
 .content-receitas {
     background-color: white;
-    padding: 60px 10%;
+    padding: 200px 10%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -112,12 +117,14 @@ span{
    SEÇÃO: FOTOS
    =========================================================== */
 .content-fotos {
-    padding: 60px 10%;
+    padding: 200px 10%;
     background-color: #fffaf7;
+    position: relative;
 }
 .image-showcase {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     gap: 20px;
 }
 .image-showcase img {
@@ -131,11 +138,19 @@ span{
     opacity: 0.9;
 }
 
+.image-text{
+    position: absolute;
+    top: 500px
+}
+
+
+
 /* ===========================================================
    SEÇÃO: CRIADORES
    =========================================================== */
 .content-criadores {
     padding: 60px 10%;
+    position: relative;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -152,29 +167,15 @@ span{
     border-bottom: 2px solid orangered;
 }
 
-/* ===========================================================
-   RESPONSIVIDADE GLOBAL
-   =========================================================== */
-@media (max-width: 768px) {
-    .showcase-images img {
-        width: 150px;
-    }
-
-    .content-inicio {
-        padding: 20px;
-    }
-
-    .speaker-card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .image-showcase {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-
-    .content-criadores {
+.content-criadores {
         flex-direction: column;
         align-items: center;
-    }
 }
+
+.content-criadores h3{
+    position: absolute;
+    top: 150px;
+    border: orangered
+    
+}
+
