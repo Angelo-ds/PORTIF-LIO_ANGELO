@@ -4,27 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/reset.css" </link>
-    <link rel="stylesheet" href="./assets/global.css"</link>
+    <link rel="stylesheet" href="./src/assets/reset.css" </link>
+    <link rel="stylesheet" href="./src/assets/global.css"</link>
 
     <title>Meu Perfíl</title>
 </head>
 <body>
-    <header>
-        <h1>Meu Perfíl</h1>
+    <header class="header">
+        <div class="header-logo">
 
-        <nav>
+            <img src="./src/assets/IMGS/logo_empresa.svg" alt="Logo Site"/>
+
+        </div>
+
+        <nav class="header-menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#content-inicio" class="nav-bar">Início</a></li>
+                <li><a href="#content-sobre"class="nav-bar">Sobre</a></li>
+                <li><a href="#content-fotos" class="nav-bar">fotos</a></li>
+                <li><a href="#content-criadores" class="nav-bar">Criadores</a></li>
             </ul>
         </nav>
         
-        <div class="">
+        <section class="content-inicio" id="content-inicio">
+            
+            <figure class="speaker-card">
+                <img src="./src/assets/IMGS/food/hamburger.jpg"/>
 
-        </div>
+                <figcaption>
+                    <h3>lorem Ipsum</h3>
+                    <p>Descubra como faz esse delicioso Lanche!</p>
+                </figcaption>
+
+            </figure>
+
+            <figure class="speaker-card">
+
+                <img src="./src/assets/IMGS/food/pizza.jpg"/>
+
+                <figcaption>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Descubra como faz essa deliciosa Pizza!</p>
+
+                </figcaption>
+            </figure>
+
+            <figure class="speaker-card">
+
+                <img src="./src/assets/IMGS/food/sushi.jpg"/>
+                <figcaption>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Descubra como faz esse delicioso Sushi!</p>
+                </figcaption>
+
+            </figure>
+
+
+        </section>
+
+        <section class="content-sobre" id="content-sobre">
+
+        </section>
     </header>
 
     <main>
