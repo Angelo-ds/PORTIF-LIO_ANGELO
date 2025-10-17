@@ -37,7 +37,6 @@
 .footer-social-images img.footer-social {
     width: 25px;
     height: 25px;
-    filter: brightness(0) invert(1);
     opacity: 0.85;
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
@@ -90,9 +89,9 @@
 
 
 .content-footer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
         padding: 15px;
         gap: 12px;

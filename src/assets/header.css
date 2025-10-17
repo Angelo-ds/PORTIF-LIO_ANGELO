@@ -17,8 +17,8 @@
 
 /* Logo */
 .header-logo img {
-    height: 70px;
-    width: auto;
+    height: 90px;
+    width: 20vw;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
