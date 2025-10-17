@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="stylesheet" href="./src/assets/reset.css" </link>
-    <link rel="stylesheet" href="./src/assets/global.css"</link>
+    <link rel="stylesheet" href="./src/assets/reset.css"/>
+    <link rel="stylesheet" href="./src/assets/global.css"/>
 
     <title>Food Writers</title>
 </head>
 <body>
-    <header class="header">
+    <header class="topo">
         <div class="header-logo">
 
             <img src="./src/assets/IMGS/logo_empresa.svg" alt="Logo Site"/>
@@ -20,7 +20,7 @@
         <nav class="header-menu">
             <ul>
                 <li><a href="#content-inicio" class="nav-bar">Início</a></li>
-                <li><a href="#content-sobre"class="nav-bar">Sobre</a></li>
+                <li><a href="#content-receitas"class="nav-bar">Receitas</a></li>
                 <li><a href="#content-fotos" class="nav-bar">fotos</a></li>
                 <li><a href="#content-criadores" class="nav-bar">Criadores</a></li>
             </ul>
@@ -28,26 +28,26 @@
 
     </header>
     <main class="main-content">
-        <section class="content-sobre" id="content-sobre">
+        <section class="content-inicio" id="content-inicio">
 
             <div class="showcase-images">
-                <img src="./src/assets/IMGS/food/Ellipse 19.jpg"/>
-                <img src="./src/assets/IMGS/food/Ellipse 18.jpg"/>
-                <img src="./src/assets/IMGS/food/Ellipse 15.jpg"/>
+                <img src="./src/assets/IMGS/food/almoco.png"/>
+                <img src="./src/assets/IMGS/food/bolo.png"/>
+                <img src="./src/assets/IMGS/food/lamen.png"/>
             </div>
 
             <div class="content-text-image">
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <img src="./src/assets/IMGS/food/Ellipse 21.jpg"/>
+                <img src="./src/assets/IMGS/food/panqueca.png"/>
             </div>
 
         </section>
 
-        <section class="content-inicio" id="content-inicio">
+        <section class="content-receitas" id="content-receitas">
             
             <figure class="speaker-card">
-                <img src="./src/assets/IMGS/food/hamburger.jpg"/>
+                <img src="./src/assets/IMGS/food/hamburger.png"/>
 
                 <figcaption>
                     <h3>lorem Ipsum</h3>
@@ -58,7 +58,7 @@
 
             <figure class="speaker-card">
 
-                <img src="./src/assets/IMGS/food/pizza.jpg"/>
+                <img src="./src/assets/IMGS/food/pizza.png"/>
 
                 <figcaption>
                     <h3>Lorem Ipsum</h3>
@@ -69,7 +69,7 @@
 
             <figure class="speaker-card">
 
-                <img src="./src/assets/IMGS/food/sushi.jpg"/>
+                <img src="./src/assets/IMGS/food/sushi.png"/>
                 <figcaption>
                     <h3>Lorem Ipsum</h3>
                     <p>Descubra como faz esse delicioso Sushi!</p>
@@ -82,20 +82,66 @@
 
         <section class="content-fotos" id="content-fotos">
             <div class="image-showcase">
-                <img src="./src/assets/IMGS/food/Ellipse 24.jpg"/>
-                <img src="./src/assets/IMGS/food/Ellipse 23.jpg"/>
-                <img src="./src/assets/IMGS/food/Ellipse 22.jpg"/>   
-                <img src="./src/assets/IMGS/food/Ellipse 25.jpg"/>
-                <img src="./src/assets/IMGS/food/Ellipse 26.jpg"/>
+                <img src="./src/assets/IMGS/food/salada.png" alt="Foto Comida"/>
+                <img src="./src/assets/IMGS/food/torrada.png" alt="Foto comida"/>
+                <img src="./src/assets/IMGS/food/bife_com_salada.png" alt="Foto comida"/>   
+                <img src="./src/assets/IMGS/food/bife_com_legumes.png" alt="Foto comida"/>
+                <img src="./src/assets/IMGS/food/bife_com_batatas.png" alt="Foto comida"/>
             </div>
 
         </section>
 
         <section class="content-criadores" id="content-criadores">
-            
+            <figure class="speaker-card">
+
+                <img src="./src/assets/IMGS/Rodrigo_Rocha.png" alt="Rodrigo Rocha, Codificador Back-end e vice da Food Writers.">
+                <figcaption>
+                    <h2>Rodrigo Rocha</h2>
+                    <p>Vice da Food Writers</p>
+                    <p>Back-end</p>
+                </figcaption>
+
+            </figure>
+            <figure class="speaker-card">
+
+                <img src="./src/assets/IMGS/Marina_Martinez.png" alt="Marina Martinez, Codificadora Front-end e CEO da Food Writers">
+                <figcaption>
+                    <h2>Marina Martinez</h2>
+                    <p>Ceo da Food Writers</p>
+                    <p>Front-end</p>
+                </figcaption>
+
+            </figure>
 
         </section>
+    </main>
+    <footer class="content-footer">
+        <div class="footer-logo">
+            <img src="./src/assets/IMGS/logo_empresa.svg" alt="logo da empresa"/>
+        </div>
 
+        <div class="footer-social-images">
+
+            <ul>
+                <li><a href="#"><img class="footer-social" src="/src/assets/IMGS/Instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img class="footer-social" src="./src/assets/IMGS/Facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img class="footer-social" src="./src/assets/IMGS/Twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img class="footer-social" src="./src/assets/IMGS/Whatsapp.png" alt="Whatsapp"></a></li>
+
+            </ul>
+        </div>
+
+        <div class="footer-comentarios">
+            <img src="./src/assets/IMGS/comentario.png" alt="balão comentário"/>
+            <input type="text" id="comentario" name="comentario" class="footer-input" placeholder="Digite aqui o que você deseja ver na proxima."/>''
+
+        </div>
+
+
+
+
+
+    </footer>
 
 </body>
 </html>

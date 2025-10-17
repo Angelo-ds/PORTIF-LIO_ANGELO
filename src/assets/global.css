@@ -1,0 +1,26 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./speaker_cards.css);
+
+
+html{
+    scroll-behavior: smooth;
+}
+.main-content{
+    max-width: 1440vh;
+    max-height: 1024vh;
+}
+
+.content-inicio, .content-receitas, .content-fotos, .content-criadores{
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 40px; 
+    color: black;
+    text-align: center;
+} 
+
+.content-receitas{
+    justify-content: flex-end;
+}
